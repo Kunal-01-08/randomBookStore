@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+body{
+    height: fit-content;
+    overflow: visible;
+}
+html{
+    width: fit-content;
+    height:fit-content;
+    overflow:visible;
+    background-image: url(background.avif);
+}
+
+
+.logo{
+    margin: 10px;
+    width: 200px;
+    height: fit-content;
+    position: absolute;
+    /* position: fixed; */
+}
+.logo img{
+    width:200px;
+    opacity: 70%;
+    position: relative;
+
+}
+.logo img:hover{
+    animation: logohover 0.1s ease 0.2s 1 both;
+}
+@keyframes logohover {
+
+    from{
+        opacity: 70%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+.logo p{
+    font-weight: 800;
+    font-style: italic;
+    text-align: center;
+    position:relative;
+    background-image: url(navbackground.avif);
+    color: black;
+    width:100%;
+    height: 20px;
+    top: -4px;
+    transition: height;
+    transition-duration: 1s;
+    
+}
+.logo p:hover{
+    height: 75px;
+}
+p a{
+    color: purple;
+}
+.categories{
+    border-radius: 100px;
+    padding: 20px;
+    color: white;
+    margin:10px;
+    position:relative;
+    height: 200px;
+    width:82vw;
+    left:220px;
+    top:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(navbackground.avif);
+    opacity: 70%;
+}
+.categories:hover{
+    animation: logohover 0.5s ease 0.2s 1 both;
+}
+.bookcategories{
+    
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.bookcategories a{
+    color:white;
+}
+.bookcategories li{
+    text-align: center;
+    border:2px solid none;
+    height:70px;
+    width: 250px;
+}
+.bookcategories li:hover{
+    animation: catbutton 0.5s linear 0s 1 normal both;
+}
+@keyframes catbutton{
+        from{
+           
+            background-color: none
+        }
+        to {
+            border:5px solid white;
+            border-radius: 100px;
+            background-color: black;
+            box-shadow: 5px 0 15px grey,-5px 0 15px grey;
+        }
+}
+.bookcatalogue{
+    position:relative;
+    top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 140px;
+}
+
+.book{
+    list-style-type: none;
+    height: fit-content;
+    width: max-content;
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+}
+
+.book li{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    margin:10px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    opacity: 70%;
+    transition:all;
+    transition-duration: 1s;
+    transition-delay: 0s;
+
+}
+.book li:hover{
+    height: 450px;
+    width: 450px;
+    opacity: 100%;
+}#about{
+
+    color: white;
+    position: absolute;
+    top:350px;
+    left:450px;
+    margin: 20px;
+}
+body{
+    padding: 20px;
+}
+.aboutpage{
+    margin:20px;
+    color: black;
+    position: absolute;
+    top: 300px;
+    left: 500px;
+    padding: 20px;
+    background-image: url(navbackground.avif);
+    font-size: 1.5rem;
+}
+.aboutlist{
+    list-style-position: inside;
+    list-style-type: circle;
+}
+.book li img{
+    transition: width;
+    transition-duration: 0.5s;
+    width: 200px;
+    
+}
+.book li a{
+    transition: all;
+    transition-duration: 0.5s;
+    font-style: italic;
+    text-align: center;
+    font-weight: 800;
+    color: black;
+}
+
+.book a:hover{
+    font-size: 1.2rem;
+    color:red
+    
+}
+.book a img:hover{
+    width: 240px;
+}
+
